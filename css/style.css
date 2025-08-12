@@ -207,7 +207,7 @@ body {
 
 .clock__item:nth-child(6) {
 	left: 60%;
-	animation: item2 1s ease-in 1s infinite alternate;
+	animation: item2 1s ease-out infinite alternate;
 }
 
 @keyframes item1 {
@@ -220,10 +220,10 @@ body {
 }
 
 @keyframes item2 {
-	0% {
-		transform: rotate(-45deg);
-	}
 	50% {
 		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-45deg);
 	}
 }
